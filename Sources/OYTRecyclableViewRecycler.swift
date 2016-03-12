@@ -36,8 +36,7 @@ public class OYTRecyclableViewRecycler {
    */
   public func dequeueReusableViewWithIdentifier(reuseIdentifier: String) -> UIView? {
     guard var views: [UIView] = self.reuseIdentifiersToRecycledViews[reuseIdentifier] else { return nil }
-    guard let view = views.last else { return nil }
-    
+    let view = views.last!    
     views.removeLast()
     if let v = view as? OYTRecyclable {
       v.prepareForReuse()
