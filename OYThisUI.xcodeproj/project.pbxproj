@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F54BB4101C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB40F1C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift */; };
+		F54BB4121C9413ED00ECAF9D /* OYTRecyclableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB4111C9413ED00ECAF9D /* OYTRecyclableTests.swift */; };
+		F591902F1C938AFB005E8522 /* OYTRecyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591902E1C938AFB005E8522 /* OYTRecyclable.swift */; };
+		F59190311C938BAF005E8522 /* OYTRecyclableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59190301C938BAF005E8522 /* OYTRecyclableView.swift */; };
 		F5C4FED01C9383DA00C42B19 /* OYThisUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C4FECF1C9383DA00C42B19 /* OYThisUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5C4FED71C9383DA00C42B19 /* OYThisUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C4FECC1C9383DA00C42B19 /* OYThisUI.framework */; };
 		F5C4FEDC1C9383DA00C42B19 /* OYThisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C4FEDB1C9383DA00C42B19 /* OYThisUITests.swift */; };
+		F5C4FEFA1C93848F00C42B19 /* OYTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C4FEF91C93848F00C42B19 /* OYTView.swift */; };
+		F5C4FEFE1C93857800C42B19 /* OYTViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C4FEFD1C93857800C42B19 /* OYTViewTests.swift */; };
+		F5C4FF001C93865100C42B19 /* MyOYTView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C4FEFF1C93865100C42B19 /* MyOYTView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +30,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F54BB40F1C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclableViewRecycler.swift; sourceTree = "<group>"; };
+		F54BB4111C9413ED00ECAF9D /* OYTRecyclableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclableTests.swift; sourceTree = "<group>"; };
+		F591902E1C938AFB005E8522 /* OYTRecyclable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclable.swift; sourceTree = "<group>"; };
+		F59190301C938BAF005E8522 /* OYTRecyclableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclableView.swift; sourceTree = "<group>"; };
 		F5C4FECC1C9383DA00C42B19 /* OYThisUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OYThisUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C4FECF1C9383DA00C42B19 /* OYThisUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OYThisUI.h; sourceTree = "<group>"; };
 		F5C4FED11C9383DA00C42B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5C4FED61C9383DA00C42B19 /* OYThisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OYThisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C4FEDB1C9383DA00C42B19 /* OYThisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYThisUITests.swift; sourceTree = "<group>"; };
 		F5C4FEDD1C9383DA00C42B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C4FEF91C93848F00C42B19 /* OYTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTView.swift; sourceTree = "<group>"; };
+		F5C4FEFD1C93857800C42B19 /* OYTViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTViewTests.swift; sourceTree = "<group>"; };
+		F5C4FEFF1C93865100C42B19 /* MyOYTView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOYTView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,7 @@
 		F5C4FEC21C9383DA00C42B19 = {
 			isa = PBXGroup;
 			children = (
+				F5C4FEF81C93847A00C42B19 /* Sources */,
 				F5C4FECE1C9383DA00C42B19 /* OYThisUI */,
 				F5C4FEDA1C9383DA00C42B19 /* OYThisUITests */,
 				F5C4FECD1C9383DA00C42B19 /* Products */,
@@ -80,10 +95,24 @@
 		F5C4FEDA1C9383DA00C42B19 /* OYThisUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F5C4FEDB1C9383DA00C42B19 /* OYThisUITests.swift */,
 				F5C4FEDD1C9383DA00C42B19 /* Info.plist */,
+				F5C4FEFF1C93865100C42B19 /* MyOYTView.xib */,
+				F5C4FEDB1C9383DA00C42B19 /* OYThisUITests.swift */,
+				F54BB4111C9413ED00ECAF9D /* OYTRecyclableTests.swift */,
+				F5C4FEFD1C93857800C42B19 /* OYTViewTests.swift */,
 			);
 			path = OYThisUITests;
+			sourceTree = "<group>";
+		};
+		F5C4FEF81C93847A00C42B19 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F5C4FEF91C93848F00C42B19 /* OYTView.swift */,
+				F591902E1C938AFB005E8522 /* OYTRecyclable.swift */,
+				F59190301C938BAF005E8522 /* OYTRecyclableView.swift */,
+				F54BB40F1C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +137,7 @@
 				F5C4FEC81C9383DA00C42B19 /* Frameworks */,
 				F5C4FEC91C9383DA00C42B19 /* Headers */,
 				F5C4FECA1C9383DA00C42B19 /* Resources */,
+				F54BB4131C94175700ECAF9D /* Swiftlint Script */,
 			);
 			buildRules = (
 			);
@@ -184,16 +214,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C4FF001C93865100C42B19 /* MyOYTView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F54BB4131C94175700ECAF9D /* Swiftlint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5C4FEC71C9383DA00C42B19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54BB4101C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift in Sources */,
+				F5C4FEFA1C93848F00C42B19 /* OYTView.swift in Sources */,
+				F591902F1C938AFB005E8522 /* OYTRecyclable.swift in Sources */,
+				F59190311C938BAF005E8522 /* OYTRecyclableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C4FEDC1C9383DA00C42B19 /* OYThisUITests.swift in Sources */,
+				F54BB4121C9413ED00ECAF9D /* OYTRecyclableTests.swift in Sources */,
+				F5C4FEFE1C93857800C42B19 /* OYTViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,28 +362,33 @@
 		F5C4FEE11C9383DA00C42B19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = OYThisUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaseltior.OYThisUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F5C4FEE21C9383DA00C42B19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = OYThisUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaseltior.OYThisUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,6 +435,7 @@
 				F5C4FEE21C9383DA00C42B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5C4FEE31C9383DA00C42B19 /* Build configuration list for PBXNativeTarget "OYThisUITests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +444,7 @@
 				F5C4FEE51C9383DA00C42B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
