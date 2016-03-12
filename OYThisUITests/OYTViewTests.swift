@@ -34,5 +34,10 @@ class OYTViewTests: XCTestCase {
     XCTAssert(aTest.aTest == 60, "function commonInitialization should have been call")
     
     let rootView = NSBundle(forClass: self.dynamicType).loadNibNamed("MyOYTView", owner: self, options: nil)[0]
+    guard let a = rootView as? OYTView else {
+      XCTFail()
+      return
+    }
+    a.commonInitialization()
   }
 }
