@@ -16,7 +16,6 @@ limitations under the License.
 
 import UIKit
 
-/** Making UIView convertible to UIImage */
 extension UIView {
   /**
    Get the image from the view

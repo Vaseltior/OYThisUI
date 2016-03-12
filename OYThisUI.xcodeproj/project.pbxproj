@@ -15,6 +15,7 @@
 		F54BB43B1C94348B00ECAF9D /* OYTInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB43A1C94348B00ECAF9D /* OYTInsetLabel.swift */; };
 		F54BB4551C9487E800ECAF9D /* UIColorFlatUIColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB4541C9487E800ECAF9D /* UIColorFlatUIColorsTests.swift */; };
 		F54BB4581C94881C00ECAF9D /* UIColor+FlatUIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB4561C94881800ECAF9D /* UIColor+FlatUIColors.swift */; };
+		F56BB8B61C94D23E00F1729C /* UITableView+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BB8B51C94D23E00F1729C /* UITableView+Height.swift */; };
 		F591902F1C938AFB005E8522 /* OYTRecyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591902E1C938AFB005E8522 /* OYTRecyclable.swift */; };
 		F59190311C938BAF005E8522 /* OYTRecyclableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59190301C938BAF005E8522 /* OYTRecyclableView.swift */; };
 		F5A3C59D1C94B43C009394C5 /* OYTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3C59C1C94B43C009394C5 /* OYTTableViewCell.swift */; };
@@ -49,6 +50,7 @@
 		F54BB43A1C94348B00ECAF9D /* OYTInsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTInsetLabel.swift; sourceTree = "<group>"; };
 		F54BB4541C9487E800ECAF9D /* UIColorFlatUIColorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorFlatUIColorsTests.swift; sourceTree = "<group>"; };
 		F54BB4561C94881800ECAF9D /* UIColor+FlatUIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+FlatUIColors.swift"; sourceTree = "<group>"; };
+		F56BB8B51C94D23E00F1729C /* UITableView+Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Height.swift"; sourceTree = "<group>"; };
 		F591902E1C938AFB005E8522 /* OYTRecyclable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclable.swift; sourceTree = "<group>"; };
 		F59190301C938BAF005E8522 /* OYTRecyclableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclableView.swift; sourceTree = "<group>"; };
 		F5A3C59C1C94B43C009394C5 /* OYTTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTTableViewCell.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				F54BB4561C94881800ECAF9D /* UIColor+FlatUIColors.swift */,
 				F54BB4141C941D0B00ECAF9D /* UILabel+SizeComputations.swift */,
 				F5A3C5A61C94C3A4009394C5 /* UIView+Images.swift */,
+				F56BB8B51C94D23E00F1729C /* UITableView+Height.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				F54BB4101C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift in Sources */,
 				F5C4FEFA1C93848F00C42B19 /* OYTView.swift in Sources */,
 				F5A3C59D1C94B43C009394C5 /* OYTTableViewCell.swift in Sources */,
+				F56BB8B61C94D23E00F1729C /* UITableView+Height.swift in Sources */,
 				F591902F1C938AFB005E8522 /* OYTRecyclable.swift in Sources */,
 				F54BB4581C94881C00ECAF9D /* UIColor+FlatUIColors.swift in Sources */,
 				F54BB41B1C9421AF00ECAF9D /* OYTNavigationController.swift in Sources */,
