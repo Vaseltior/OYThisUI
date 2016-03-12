@@ -12,6 +12,7 @@
 		F54BB4151C941D0B00ECAF9D /* UILabel+SizeComputations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB4141C941D0B00ECAF9D /* UILabel+SizeComputations.swift */; };
 		F54BB4171C941DF300ECAF9D /* UILabelSizeComputationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB4161C941DF300ECAF9D /* UILabelSizeComputationsTests.swift */; };
 		F54BB41B1C9421AF00ECAF9D /* OYTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB41A1C9421AF00ECAF9D /* OYTNavigationController.swift */; };
+		F54BB43B1C94348B00ECAF9D /* OYTInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB43A1C94348B00ECAF9D /* OYTInsetLabel.swift */; };
 		F591902F1C938AFB005E8522 /* OYTRecyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591902E1C938AFB005E8522 /* OYTRecyclable.swift */; };
 		F59190311C938BAF005E8522 /* OYTRecyclableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59190301C938BAF005E8522 /* OYTRecyclableView.swift */; };
 		F5C4FED01C9383DA00C42B19 /* OYThisUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C4FECF1C9383DA00C42B19 /* OYThisUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +39,7 @@
 		F54BB4141C941D0B00ECAF9D /* UILabel+SizeComputations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+SizeComputations.swift"; sourceTree = "<group>"; };
 		F54BB4161C941DF300ECAF9D /* UILabelSizeComputationsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelSizeComputationsTests.swift; sourceTree = "<group>"; };
 		F54BB41A1C9421AF00ECAF9D /* OYTNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTNavigationController.swift; sourceTree = "<group>"; };
+		F54BB43A1C94348B00ECAF9D /* OYTInsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTInsetLabel.swift; sourceTree = "<group>"; };
 		F591902E1C938AFB005E8522 /* OYTRecyclable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclable.swift; sourceTree = "<group>"; };
 		F59190301C938BAF005E8522 /* OYTRecyclableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclableView.swift; sourceTree = "<group>"; };
 		F5C4FECC1C9383DA00C42B19 /* OYThisUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OYThisUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				F54BB40F1C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift */,
 				F5C4FEF91C93848F00C42B19 /* OYTView.swift */,
 				F54BB4141C941D0B00ECAF9D /* UILabel+SizeComputations.swift */,
+				F54BB43A1C94348B00ECAF9D /* OYTInsetLabel.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				F591902F1C938AFB005E8522 /* OYTRecyclable.swift in Sources */,
 				F54BB41B1C9421AF00ECAF9D /* OYTNavigationController.swift in Sources */,
 				F59190311C938BAF005E8522 /* OYTRecyclableView.swift in Sources */,
+				F54BB43B1C94348B00ECAF9D /* OYTInsetLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
