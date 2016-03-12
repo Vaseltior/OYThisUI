@@ -38,6 +38,9 @@ extension UIColor {
     self.init(red: CGFloat(r)/255, green: CGFloat(g)/255, blue: CGFloat(b)/255, alpha: 1.0)
   }
   
+}
+
+extension UIColor {
   /**
    Turquoise Color
    
@@ -73,7 +76,9 @@ extension UIColor {
   public static func nephritisColor() -> UIColor {
     return UIColor(r: 39, g: 174, b: 96)
   }
-  
+}
+
+extension UIColor {
   /**
    peterRiverColor
    
@@ -109,7 +114,9 @@ extension UIColor {
   public static func wisteriaColor() -> UIColor {
     return UIColor(r:142, g:68, b:173)
   }
-  
+}
+
+extension UIColor {
   /**
    wetAsphaltColor
    
@@ -128,6 +135,9 @@ extension UIColor {
     return UIColor(r:44, g:62, b:80)
   }
   
+}
+
+extension UIColor {
   /**
    sunflowerColor
    
@@ -172,6 +182,9 @@ extension UIColor {
   public static func pomegranateColor() -> UIColor {
     return UIColor(r:192, g:57, b:43)
   }
+}
+
+extension UIColor {
   
   /**
    cloudsColor
