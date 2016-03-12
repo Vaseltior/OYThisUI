@@ -10,9 +10,5 @@ script:
 - xctool -project OYThisUI.xcodeproj -scheme OYThisUI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 - xctool test -project OYThisUI.xcodeproj -scheme OYThisUI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
-before_install:
-  - pip install codecov
-after_success:
-  - codecov
 after_success:
   - bash <(curl -s https://codecov.io/bash)
