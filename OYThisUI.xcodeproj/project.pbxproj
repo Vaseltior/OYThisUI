@@ -20,6 +20,8 @@
 		F5A3C59D1C94B43C009394C5 /* OYTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3C59C1C94B43C009394C5 /* OYTTableViewCell.swift */; };
 		F5A3C59F1C94B4E0009394C5 /* OYTTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3C59E1C94B4E0009394C5 /* OYTTableViewCellTests.swift */; };
 		F5A3C5A11C94BD65009394C5 /* UIColor+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3C5A01C94BD65009394C5 /* UIColor+Convenience.swift */; };
+		F5A3C5A71C94C3A4009394C5 /* UIView+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3C5A61C94C3A4009394C5 /* UIView+Images.swift */; };
+		F5A3C5A91C94C4A2009394C5 /* UIVIewImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3C5A81C94C4A2009394C5 /* UIVIewImagesTests.swift */; };
 		F5C4FED01C9383DA00C42B19 /* OYThisUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C4FECF1C9383DA00C42B19 /* OYThisUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5C4FED71C9383DA00C42B19 /* OYThisUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C4FECC1C9383DA00C42B19 /* OYThisUI.framework */; };
 		F5C4FEDC1C9383DA00C42B19 /* OYThisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C4FEDB1C9383DA00C42B19 /* OYThisUITests.swift */; };
@@ -52,6 +54,8 @@
 		F5A3C59C1C94B43C009394C5 /* OYTTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTTableViewCell.swift; sourceTree = "<group>"; };
 		F5A3C59E1C94B4E0009394C5 /* OYTTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTTableViewCellTests.swift; sourceTree = "<group>"; };
 		F5A3C5A01C94BD65009394C5 /* UIColor+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Convenience.swift"; sourceTree = "<group>"; };
+		F5A3C5A61C94C3A4009394C5 /* UIView+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Images.swift"; sourceTree = "<group>"; };
+		F5A3C5A81C94C4A2009394C5 /* UIVIewImagesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewImagesTests.swift; sourceTree = "<group>"; };
 		F5C4FECC1C9383DA00C42B19 /* OYThisUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OYThisUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C4FECF1C9383DA00C42B19 /* OYThisUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OYThisUI.h; sourceTree = "<group>"; };
 		F5C4FED11C9383DA00C42B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 				F5C4FEFD1C93857800C42B19 /* OYTViewTests.swift */,
 				F54BB4541C9487E800ECAF9D /* UIColorFlatUIColorsTests.swift */,
 				F54BB4161C941DF300ECAF9D /* UILabelSizeComputationsTests.swift */,
+				F5A3C5A81C94C4A2009394C5 /* UIVIewImagesTests.swift */,
 			);
 			path = OYThisUITests;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				F5A3C5A01C94BD65009394C5 /* UIColor+Convenience.swift */,
 				F54BB4561C94881800ECAF9D /* UIColor+FlatUIColors.swift */,
 				F54BB4141C941D0B00ECAF9D /* UILabel+SizeComputations.swift */,
+				F5A3C5A61C94C3A4009394C5 /* UIView+Images.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 				F54BB4581C94881C00ECAF9D /* UIColor+FlatUIColors.swift in Sources */,
 				F54BB41B1C9421AF00ECAF9D /* OYTNavigationController.swift in Sources */,
 				F59190311C938BAF005E8522 /* OYTRecyclableView.swift in Sources */,
+				F5A3C5A71C94C3A4009394C5 /* UIView+Images.swift in Sources */,
 				F54BB43B1C94348B00ECAF9D /* OYTInsetLabel.swift in Sources */,
 				F5A3C5A11C94BD65009394C5 /* UIColor+Convenience.swift in Sources */,
 			);
@@ -288,6 +295,7 @@
 			files = (
 				F5C4FEDC1C9383DA00C42B19 /* OYThisUITests.swift in Sources */,
 				F54BB4121C9413ED00ECAF9D /* OYTRecyclableTests.swift in Sources */,
+				F5A3C5A91C94C4A2009394C5 /* UIVIewImagesTests.swift in Sources */,
 				F54BB4551C9487E800ECAF9D /* UIColorFlatUIColorsTests.swift in Sources */,
 				F5C4FEFE1C93857800C42B19 /* OYTViewTests.swift in Sources */,
 				F5A3C59F1C94B4E0009394C5 /* OYTTableViewCellTests.swift in Sources */,
