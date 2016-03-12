@@ -1,5 +1,5 @@
 //
-//  OYTViewTests.swift
+//  OYTTableViewCellTests.swift
 //  OYThisUI
 //
 //  Created by Samuel Grau on 12/03/2016.
@@ -9,8 +9,8 @@
 import XCTest
 @testable import OYThisUI
 
-class OYTViewTests: XCTestCase {
-  class MyView: OYTView {
+class OYTTableViewCellTests: XCTestCase {
+  class MyView: OYTTableViewCell {
     var aTest: Int = 0
     
     override func commonInitialization() {
@@ -21,10 +21,9 @@ class OYTViewTests: XCTestCase {
   
   func testThatCommonInitIsCalled() {
     let aTest: MyView = MyView(frame: CGRectZero)
-    XCTAssert(aTest.aTest == 60, "function commonInitialization should have been call")
-    
-    let rootView = NSBundle(forClass: self.dynamicType).loadNibNamed("MyOYTView", owner: self, options: nil)[0]
-    guard let a = rootView as? OYTView else {
+    XCTAssert(aTest.aTest == 60, "function commonInitialization should have been called")
+    let rootView = NSBundle(forClass: self.dynamicType).loadNibNamed("MyOYTView", owner: self, options: nil)[1]
+    guard let a = rootView as? OYTTableViewCell else {
       XCTFail()
       return
     }

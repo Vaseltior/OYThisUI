@@ -12,7 +12,7 @@ import XCTest
 class OYTRecyclableTests: XCTestCase {
   func testOYTRecyclingInit() {
     let aTest: OYTRecyclableView = OYTRecyclableView(reuseIdentifier: "toto")
-    XCTAssert(aTest.reuseIdentifier == "toto", "function commonInitialization should have been call")
+    XCTAssert(aTest.oytReuseIdentifier == "toto", "function commonInitialization should have been call")
   }
   
   func testRecycler() {

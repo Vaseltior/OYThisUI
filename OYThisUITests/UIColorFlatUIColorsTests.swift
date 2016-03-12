@@ -17,26 +17,6 @@ class UIColorFlatUIColorTests: XCTestCase {
   var b: CGFloat = 0
   var a: CGFloat = 0
   
-  override func setUp() {
-    super.setUp()
-  }
-  
-  override func tearDown() {
-    super.tearDown()
-  }
-  
-  func testFuicBackgroundColor() {
-    let c = UIColor.fuicBackgroundColor()
-    c.getRed(&r, green: &g, blue: &b, alpha: &a)
-    XCTAssert(r == (246/255.0) && g == (246/255.0) && b == (246/255.0) && a == 1.0)
-  }
-  
-  func testFuicGrayColor() {
-    let c = UIColor.fuicGrayColor()
-    c.getRed(&r, green: &g, blue: &b, alpha: &a)
-    XCTAssert(r == (146/255) && g == (146/255) && b == (157/255) && a == 1.0)
-  }
-  
   func testTurquoiseColor() {
     let c = UIColor.turquoiseColor()
     c.getRed(&r, green: &g, blue: &b, alpha: &a)
@@ -166,13 +146,6 @@ class UIColorFlatUIColorTests: XCTestCase {
     let c = UIColor.asbestosColor()
     c.getRed(&r, green: &g, blue: &b, alpha: &a)
     XCTAssert(r == (127/255) && g == (140/255) && b == (141/255) && a == 1.0)
-  }
-  
-  //
-  func testGrayBackGroundColor() {
-    let c = UIColor.grayBackGroundColor()
-    c.getRed(&r, green: &g, blue: &b, alpha: &a)
-    XCTAssert(r == 0.95 && g == 0.95 && b == 0.95 && a == 1.0)
   }
   
   func testColorFromRGB() {

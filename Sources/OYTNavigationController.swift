@@ -8,6 +8,10 @@
 
 import UIKit
 
+/**
+ This is a UINavigation controller that behave considering the presented view controller
+ or the top most view controller
+ */
 public class OYTNavigationController: UINavigationController {
   /**
    Returns all of the interface orientations that the view controller supports.

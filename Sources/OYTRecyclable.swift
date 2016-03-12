@@ -22,8 +22,8 @@ public protocol OYTRecyclable {
    Views will be reused when a new view is requested with a matching identifier.
    If the reuseIdentifier is nil then the class name will be used.
    */
-  var reuseIdentifier: String? {get set}
+  var oytReuseIdentifier: String? {get set}
   
   /// Called immediately after the view has been dequeued from the recycled view pool.
-  func prepareForReuse()
+  func oytPrepareForReuse()
 }

@@ -27,7 +27,7 @@ public class OYTRecyclableView: OYTView, OYTRecyclable {
    This view's reuse identifier. 
    Used by AVViewRecycler to pool this view into a group of similar recycled views.
    */
-  public var reuseIdentifier: String? = nil
+  public var oytReuseIdentifier: String? = nil
   
   /**
    Initializes a newly allocated view with the given reuse identifier.
@@ -39,9 +39,9 @@ public class OYTRecyclableView: OYTView, OYTRecyclable {
    */
   public convenience init(reuseIdentifier: String) {
     self.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-    self.reuseIdentifier = reuseIdentifier
+    self.oytReuseIdentifier = reuseIdentifier
   }
   
   /// Called immediately after the view has been dequeued from the recycled view pool.
-  public func prepareForReuse() {}
+  public func oytPrepareForReuse() {}
 }

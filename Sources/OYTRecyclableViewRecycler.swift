@@ -39,7 +39,7 @@ public class OYTRecyclableViewRecycler {
     let view = views.last!    
     views.removeLast()
     if let v = view as? OYTRecyclable {
-      v.prepareForReuse()
+      v.oytPrepareForReuse()
     }
     return view
   }
@@ -53,7 +53,7 @@ public class OYTRecyclableViewRecycler {
     view.removeFromSuperview()
     var reuseIdentifier: String? = nil
     if let v = view as? OYTRecyclable {
-      reuseIdentifier = v.reuseIdentifier
+      reuseIdentifier = v.oytReuseIdentifier
     }
     if reuseIdentifier == nil {
       reuseIdentifier = NSStringFromClass(view.dynamicType)

@@ -2,5 +2,3 @@ OYTRecyclableViewRecycler.swift
 	public var reuseIdentifiersToRecycledViews: [String: [UIView]] = [String: [UIView]]()
 OYTRecyclable.swift
 	public protocol OYTRecyclable
-OYTNavigationController.swift
-	public class OYTNavigationController: UINavigationController
