@@ -43,6 +43,7 @@ class OYTRecyclableTests: XCTestCase {
   
   func testRecyclerDequeuing() {
     let recycler = OYTRecyclableViewRecycler()
+    recycler.dequeueReusableViewWithIdentifier("")
     var v = OYTRecyclableView(reuseIdentifier: "111")
     recycler.recycleView(v)
     v = OYTRecyclableView(reuseIdentifier: "111")
