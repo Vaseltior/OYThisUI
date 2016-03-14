@@ -59,7 +59,7 @@ public class OYTEllipseView: OYTView {
     self.backgroundColor = UIColor.clearColor()
   }
   
-  // MARK: - Properties
+  // MARK: - Drawing methods
   
   /**
   Draws the receiver’s image within the passed-in rectangle.
@@ -71,20 +71,15 @@ public class OYTEllipseView: OYTView {
   public override func drawRect(rect: CGRect) {
     super.drawRect(rect)
     
-    let context = UIGraphicsGetCurrentContext()
+    guard let context = UIGraphicsGetCurrentContext() else {
+      return
+    }
+    
     // Ensures that the bgColor is still clear even if the dev has not defined it...
-    let bgColor = self.backgroundColor ?? UIColor.clearColor()
-    CGContextSetFillColorWithColor(context, bgColor.CGColor)
-    CGContextFillRect(context, rect)
+    self.fillRectWithBackgroundColor(context, rect: rect)
+    self.configureDrawing(context)
     
-    let scaleRatio = 1.0/UIScreen.mainScreen().scale
-    let inset = scaleRatio*self.ellipseBorderWidth
-    let innerRect = CGRectInset(rect, inset, inset)
-    
-    CGContextSetFillColorWithColor(context, self.ellipseColor.CGColor)
-    CGContextSetStrokeColorWithColor(context, self.ellipseColor.CGColor)
-    
-    CGContextSetLineWidth(context, self.ellipseBorderWidth)
+    let innerRect = self.innerRect(rect)
     CGContextAddEllipseInRect(context, innerRect)
     // Should we fulfill the entire view??? or draw borders???
     if self.fulfillEllipse {
@@ -95,5 +90,32 @@ public class OYTEllipseView: OYTView {
     }
     
     CGContextFillPath(context)
+  }
+  
+  // MARK: - Private calls
+  
+  /**
+  Fill the rect in the context with the current bqckgorund color
+  
+  - parameter context: the graphical context in where to draw
+  - parameter rect:    The portion of the view’s bounds that needs to be updated.
+  */
+  private func fillRectWithBackgroundColor(context: CGContext, rect: CGRect) {
+    // Ensures that the bgColor is still clear even if the dev has not defined it...
+    let bgColor = self.backgroundColor ?? UIColor.clearColor()
+    CGContextSetFillColorWithColor(context, bgColor.CGColor)
+    CGContextFillRect(context, rect)
+  }
+  
+  private func innerRect(rect: CGRect) -> CGRect {
+    let scaleRatio = 1.0/UIScreen.mainScreen().scale
+    let inset = scaleRatio*self.ellipseBorderWidth
+    return CGRectInset(rect, inset, inset)
+  }
+  
+  private func configureDrawing(context: CGContext) {
+    CGContextSetFillColorWithColor(context, self.ellipseColor.CGColor)
+    CGContextSetStrokeColorWithColor(context, self.ellipseColor.CGColor)
+    CGContextSetLineWidth(context, self.ellipseBorderWidth)
   }
 }
