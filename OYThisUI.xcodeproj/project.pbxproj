@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E12D6FC61C96E8BD0057E782 /* OYTDateStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D6FC51C96E8BD0057E782 /* OYTDateStackView.swift */; };
 		F54BB4101C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB40F1C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift */; };
 		F54BB4121C9413ED00ECAF9D /* OYTRecyclableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB4111C9413ED00ECAF9D /* OYTRecyclableTests.swift */; };
 		F54BB4151C941D0B00ECAF9D /* UILabel+SizeComputations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BB4141C941D0B00ECAF9D /* UILabel+SizeComputations.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E12D6FC51C96E8BD0057E782 /* OYTDateStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTDateStackView.swift; sourceTree = "<group>"; };
 		F54BB40F1C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclableViewRecycler.swift; sourceTree = "<group>"; };
 		F54BB4111C9413ED00ECAF9D /* OYTRecyclableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclableTests.swift; sourceTree = "<group>"; };
 		F54BB4141C941D0B00ECAF9D /* UILabel+SizeComputations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+SizeComputations.swift"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		F5C4FEF81C93847A00C42B19 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E12D6FC51C96E8BD0057E782 /* OYTDateStackView.swift */,
 				F56BB8B71C96104200F1729C /* OYTEllipseView.swift */,
 				F54BB43A1C94348B00ECAF9D /* OYTInsetLabel.swift */,
 				F54BB41A1C9421AF00ECAF9D /* OYTNavigationController.swift */,
@@ -293,6 +296,7 @@
 			files = (
 				F54BB4151C941D0B00ECAF9D /* UILabel+SizeComputations.swift in Sources */,
 				F54BB4101C938DCE00ECAF9D /* OYTRecyclableViewRecycler.swift in Sources */,
+				E12D6FC61C96E8BD0057E782 /* OYTDateStackView.swift in Sources */,
 				F5C4FEFA1C93848F00C42B19 /* OYTView.swift in Sources */,
 				F5A3C59D1C94B43C009394C5 /* OYTTableViewCell.swift in Sources */,
 				F56BB8B61C94D23E00F1729C /* UITableView+Height.swift in Sources */,

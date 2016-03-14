@@ -77,13 +77,9 @@ public class OYTEllipseView: OYTView {
     
     // Ensures that the bgColor is still clear even if the dev has not defined it...
     self.fillRectWithBackgroundColor(context, rect: rect)
+    self.configureDrawing(context)
     
     let innerRect = self.innerRect(rect)
-    
-    CGContextSetFillColorWithColor(context, self.ellipseColor.CGColor)
-    CGContextSetStrokeColorWithColor(context, self.ellipseColor.CGColor)
-    
-    CGContextSetLineWidth(context, self.ellipseBorderWidth)
     CGContextAddEllipseInRect(context, innerRect)
     // Should we fulfill the entire view??? or draw borders???
     if self.fulfillEllipse {
@@ -104,7 +100,7 @@ public class OYTEllipseView: OYTView {
   - parameter context: the graphical context in where to draw
   - parameter rect:    The portion of the view’s bounds that needs to be updated.
   */
-  private func fillRectWithBackgroundColor(context: CGContext?, rect: CGRect) {
+  private func fillRectWithBackgroundColor(context: CGContext, rect: CGRect) {
     // Ensures that the bgColor is still clear even if the dev has not defined it...
     let bgColor = self.backgroundColor ?? UIColor.clearColor()
     CGContextSetFillColorWithColor(context, bgColor.CGColor)
@@ -115,5 +111,11 @@ public class OYTEllipseView: OYTView {
     let scaleRatio = 1.0/UIScreen.mainScreen().scale
     let inset = scaleRatio*self.ellipseBorderWidth
     return CGRectInset(rect, inset, inset)
+  }
+  
+  private func configureDrawing(context: CGContext) {
+    CGContextSetFillColorWithColor(context, self.ellipseColor.CGColor)
+    CGContextSetStrokeColorWithColor(context, self.ellipseColor.CGColor)
+    CGContextSetLineWidth(context, self.ellipseBorderWidth)
   }
 }
