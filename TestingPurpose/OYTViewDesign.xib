@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaZ-Hm-2YO" customClass="OYTEllipseView" customModule="OYThisUI">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                    <color key="backgroundColor" red="0.1002583612696564" green="0.060990021474359592" blue="0.33518781565656564" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="Xbz-FE-6Ws"/>
+                        <constraint firstAttribute="height" constant="240" id="jnc-cz-6wM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                            <color key="value" red="1" green="0.28847717509391191" blue="0.3638876566157464" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="drawBordersOfCircle" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ellipseColor">
+                            <color key="value" red="1" green="0.95053739856330099" blue="0.11833066848112883" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="fulfillEllipse" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ellipseBorderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aaZ-Hm-2YO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2QP-JW-WFh"/>
+                <constraint firstItem="aaZ-Hm-2YO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ayl-b6-R14"/>
+                <constraint firstItem="aaZ-Hm-2YO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="213" id="Bkw-8g-Yz7"/>
+                <constraint firstItem="aaZ-Hm-2YO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="165" id="UBG-46-scD"/>
+                <constraint firstItem="aaZ-Hm-2YO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nTL-bZ-mUQ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2QP-JW-WFh"/>
+                    <exclude reference="Bkw-8g-Yz7"/>
+                    <exclude reference="UBG-46-scD"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
