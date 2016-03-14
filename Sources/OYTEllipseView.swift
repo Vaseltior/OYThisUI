@@ -71,7 +71,10 @@ public class OYTEllipseView: OYTView {
   public override func drawRect(rect: CGRect) {
     super.drawRect(rect)
     
-    let context = UIGraphicsGetCurrentContext()
+    guard let context = UIGraphicsGetCurrentContext() else {
+      return
+    }
+    
     // Ensures that the bgColor is still clear even if the dev has not defined it...
     self.fillRectWithBackgroundColor(context, rect: rect)
     
