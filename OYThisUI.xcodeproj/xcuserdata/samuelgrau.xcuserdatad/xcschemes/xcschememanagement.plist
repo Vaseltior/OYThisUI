@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Example.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>OYThisUI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>F56BB8C11C9787D600F1729C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F5C4FECB1C9383DA00C42B19</key>
 		<dict>
 			<key>primary</key>
