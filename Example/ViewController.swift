@@ -37,6 +37,18 @@ class ViewController: UIViewController {
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
     let manager = OYTProgressViewManager.sharedInstance
+    manager.height = 2.0
     manager.showProgressView(self.view)
+    
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0), { () -> Void in
+      // wait 10s then ask on the main thread to hide the progress view
+      gcdDelay(10) {
+        gcdMainThread {
+          manager.hideProgressView()
+        }
+      }
+      
+    })
+    
   }
 }

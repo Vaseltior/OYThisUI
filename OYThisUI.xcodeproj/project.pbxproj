@@ -26,6 +26,7 @@
 		F56BB8D61C978A5D00F1729C /* OYThisUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C4FECC1C9383DA00C42B19 /* OYThisUI.framework */; };
 		F56BB8D81C97922600F1729C /* OYTProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BB8D71C97922600F1729C /* OYTProgressView.swift */; };
 		F56BB8DA1C9792B500F1729C /* OYTProgressViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BB8D91C9792B500F1729C /* OYTProgressViewManager.swift */; };
+		F56BB8DE1C97A61A00F1729C /* GCDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BB8DD1C97A61A00F1729C /* GCDUtils.swift */; };
 		F591902F1C938AFB005E8522 /* OYTRecyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591902E1C938AFB005E8522 /* OYTRecyclable.swift */; };
 		F59190311C938BAF005E8522 /* OYTRecyclableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59190301C938BAF005E8522 /* OYTRecyclableView.swift */; };
 		F5A3C59D1C94B43C009394C5 /* OYTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3C59C1C94B43C009394C5 /* OYTTableViewCell.swift */; };
@@ -80,6 +81,7 @@
 		F56BB8D01C9787D600F1729C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F56BB8D71C97922600F1729C /* OYTProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTProgressView.swift; sourceTree = "<group>"; };
 		F56BB8D91C9792B500F1729C /* OYTProgressViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTProgressViewManager.swift; sourceTree = "<group>"; };
+		F56BB8DD1C97A61A00F1729C /* GCDUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDUtils.swift; sourceTree = "<group>"; };
 		F591902E1C938AFB005E8522 /* OYTRecyclable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclable.swift; sourceTree = "<group>"; };
 		F59190301C938BAF005E8522 /* OYTRecyclableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTRecyclableView.swift; sourceTree = "<group>"; };
 		F5A3C59C1C94B43C009394C5 /* OYTTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYTTableViewCell.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				F56BB8CB1C9787D600F1729C /* Assets.xcassets */,
 				F56BB8CD1C9787D600F1729C /* LaunchScreen.storyboard */,
 				F56BB8D01C9787D600F1729C /* Info.plist */,
+				F56BB8DD1C97A61A00F1729C /* GCDUtils.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56BB8DE1C97A61A00F1729C /* GCDUtils.swift in Sources */,
 				F56BB8C71C9787D600F1729C /* ViewController.swift in Sources */,
 				F56BB8C51C9787D600F1729C /* AppDelegate.swift in Sources */,
 			);
