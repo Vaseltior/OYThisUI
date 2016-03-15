@@ -47,7 +47,7 @@ variable_name:
   min_length: 1
   max_length: 64
 type_name:
-  min_length: 4 # only warning
+  min_length: 2 # only warning
   max_length: # warning and error
     warning: 60
     error: 70

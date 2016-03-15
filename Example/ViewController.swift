@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     self.view.backgroundColor = UIColor.blueColor()
     self.view.addSubview(self.testView)
+    self.testView.date = NSDate()
   }
   
   override func didReceiveMemoryWarning() {
@@ -33,4 +34,9 @@ class ViewController: UIViewController {
     self.testView.frame = self.view.bounds
   }
   
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+    let manager = OYTProgressViewManager.sharedInstance
+    manager.showProgressView(self.view)
+  }
 }
