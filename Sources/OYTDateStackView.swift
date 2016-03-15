@@ -19,6 +19,8 @@ import UIKit
 @IBDesignable
 public class OYTDateStackView: OYTView {
   
+  private static let fontName = "KohinoorDevanagari-Medium"
+  
   // MARK: - Properties
   
   /// The date represented by the view
@@ -29,7 +31,7 @@ public class OYTDateStackView: OYTView {
       f.dateFormat = "dd" // Set the day style
       self.dayLabel.text = f.stringFromDate(self.date) // set the day representation
       
-      f.dateFormat = "MMMM" // update the format
+      f.dateFormat = "MMMM yyyy" // update the format
       self.monthLabel.text = f.stringFromDate(self.date) // the the month representation
       
       // self.setNeedsLayout() // No need, automatic update for those properties
@@ -47,14 +49,14 @@ public class OYTDateStackView: OYTView {
   /// The font used to display the views (at least one font for now)
   @IBInspectable public var dayFontSize: CGFloat = 15.0 {
     didSet {
-      self.dayLabel.font = UIFont.systemFontOfSize(self.dayFontSize)
+      self.dayLabel.font = UIFont(name: OYTDateStackView.fontName, size: self.dayFontSize)
       self.setNeedsLayout()
       self.setNeedsDisplay()
     }
   }
   @IBInspectable public var monthFontSize: CGFloat = 15.0 {
     didSet {
-      self.monthLabel.font = UIFont.systemFontOfSize(self.monthFontSize)
+      self.monthLabel.font = UIFont(name: OYTDateStackView.fontName, size: self.monthFontSize)
       self.setNeedsLayout()
       self.setNeedsDisplay()
     }
@@ -103,9 +105,9 @@ public class OYTDateStackView: OYTView {
     super.prepareForInterfaceBuilder()
     
     self.date = NSDate() // test because did set is not called
-    self.textColor = UIColor.whiteColor()
-    self.dayFontSize = 50.0
-    self.monthFontSize = 15.0
+    /*self.textColor = UIColor.whiteColor()
+    self.dayFontSize = 90.0
+    self.monthFontSize = 16.0*/
     //self.dayLabel.backgroundColor = UIColor.greenColor()
     //self.monthLabel.backgroundColor = UIColor.blueColor()
   }
@@ -129,10 +131,10 @@ public class OYTDateStackView: OYTView {
     self.dayLabel.frame = f
     
     f = self.monthLabel.frame
-    f.origin = CGPoint(x: 0, y: halfHeight)
+    f.origin = CGPoint(x: 0, y: halfHeight + self.lineWidth / 2.0)
     f.size = CGSize(
       width: width,
-      height: self.dayLabel.oytSizeWithView(self).height
+      height: self.monthLabel.oytSizeWithView(self).height
     )
     self.monthLabel.frame = f
   }
@@ -153,8 +155,8 @@ public class OYTDateStackView: OYTView {
       return
     }
     
-    //let scaleRatio = 1.0/UIScreen.mainScreen().scale
-    let bWidth: CGFloat = 1.0//scaleRatio*self.lineWidth
+    let scaleRatio = 1.0/UIScreen.mainScreen().scale
+    let bWidth: CGFloat = scaleRatio*self.lineWidth
     let halfHeight = CGRectGetHeight(rect)/2.0
     let width = CGRectGetWidth(rect)
     CGContextSetStrokeColorWithColor(context, self.textColor.CGColor)

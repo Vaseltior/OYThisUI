@@ -23,6 +23,7 @@
 		F56BB8CA1C9787D600F1729C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56BB8C81C9787D600F1729C /* Main.storyboard */; };
 		F56BB8CC1C9787D600F1729C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56BB8CB1C9787D600F1729C /* Assets.xcassets */; };
 		F56BB8CF1C9787D600F1729C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56BB8CD1C9787D600F1729C /* LaunchScreen.storyboard */; };
+		F56BB8D61C978A5D00F1729C /* OYThisUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C4FECC1C9383DA00C42B19 /* OYThisUI.framework */; };
 		F591902F1C938AFB005E8522 /* OYTRecyclable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F591902E1C938AFB005E8522 /* OYTRecyclable.swift */; };
 		F59190311C938BAF005E8522 /* OYTRecyclableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59190301C938BAF005E8522 /* OYTRecyclableView.swift */; };
 		F5A3C59D1C94B43C009394C5 /* OYTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3C59C1C94B43C009394C5 /* OYTTableViewCell.swift */; };
@@ -39,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F56BB8D41C978A5800F1729C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5C4FEC31C9383DA00C42B19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5C4FECB1C9383DA00C42B19;
+			remoteInfo = OYThisUI;
+		};
 		F5C4FED81C9383DA00C42B19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F5C4FEC31C9383DA00C42B19 /* Project object */;
@@ -91,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56BB8D61C978A5D00F1729C /* OYThisUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +235,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F56BB8D51C978A5800F1729C /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -403,6 +413,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F56BB8D51C978A5800F1729C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5C4FECB1C9383DA00C42B19 /* OYThisUI */;
+			targetProxy = F56BB8D41C978A5800F1729C /* PBXContainerItemProxy */;
+		};
 		F5C4FED91C9383DA00C42B19 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F5C4FECB1C9383DA00C42B19 /* OYThisUI */;
