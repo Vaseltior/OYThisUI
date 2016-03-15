@@ -74,12 +74,16 @@ public class OYTProgressViewManager {
   public func showProgressView(view: UIView? = nil) {
     // Starting with a full tranparency
     self.progressView.alpha = 0.0
-    // configure the animation of the progress view before showing it
-    self.progressView.initializeAnimation(self.leftToRight, animationDuration: self.animationDuration)
     // If the view is given, we add it otherwise (making the not so risky assumption that the window exists)
     // we add the progressview to the window
+    // View must be added to the superview before the animation is launched, because
+    // animation rely on the view frame which is not computed until the view is not added
+    // to the superview.....
     let destinationView = view ?? UIApplication.sharedApplication().keyWindow!
     destinationView.addSubview(self.progressView)
+    
+    // configure the animation of the progress view before showing it
+    self.progressView.initializeAnimation(self.leftToRight, animationDuration: self.animationDuration)
     
     // Animating appearance
     UIView.animateWithDuration(0.25, animations: { () -> Void in

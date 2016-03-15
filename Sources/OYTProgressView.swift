@@ -65,7 +65,7 @@ public class OYTProgressView: OYTView {
           height: self.viewHeight
         )
       }
-      
+      self.backgroundColor = OYTProgressViewManager.sharedInstance.color
       self.frame = newFrame
       
     }
@@ -99,12 +99,15 @@ public class OYTProgressView: OYTView {
    - returns: the configured animation to use for the progress view
    */
   private func progressAnimation(leftToRight: Bool, animationDuration duration: CFTimeInterval) -> CAAnimation {
+    // Animation along the x axis
     let animation: CABasicAnimation = CABasicAnimation(keyPath: "position.x")
+
     animation.fromValue = leftToRight ? -frame.size.width : frame.size.width * 2
     animation.toValue = leftToRight ? frame.size.width * 2 : -frame.size.width
     animation.duration = duration
     animation.fillMode = kCAFillModeBoth
     animation.repeatCount = Float.infinity
+
     return animation
   }
 }
